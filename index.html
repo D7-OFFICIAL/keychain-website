@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DENSITY KEYCHAIN'S</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0; padding: 0;
+      background: #f5f7fa; 
+      color: #333;  
+      font-size: 18px; 
+      line-height: 1.6;
+    }
+
+    /* ===== HEADER ===== */
+    header {
+      background: linear-gradient(135deg, #28a745, #218838);
+      color: #fff; 
+      padding: 40px; 
+      text-align: center;
+    }
+    header h1 {
+      margin: 0; 
+      font-size: 3em;   
+      letter-spacing: 2px;
+    }
+    header p {
+      font-size: 1.3em; 
+      margin-top: 5px;
+      color: #e0e0e0;
+    }
+
+    /* ===== NAVBAR ===== */
+    nav {
+      background: #222; 
+      padding: 12px; 
+      text-align: center;
+    }
+    nav a {
+      color: #fff; 
+      margin: 0 20px; 
+      text-decoration: none;
+      font-weight: bold; 
+      font-size: 1.2em;
+      transition: color 0.3s, border-bottom 0.3s;
+    }
+    nav a:hover { 
+      color: #28a745; 
+      border-bottom: 2px solid #28a745;
+    }
+
+    /* ===== SECTIONS ===== */
+    section { 
+      padding: 60px 20px; 
+      text-align: center; 
+    }
+    section h2 {
+      font-size: 2.4em; 
+      margin-bottom: 15px;
+      color: #222;
+    }
+    section p {
+      font-size: 1.1em;
+      max-width: 700px;
+      margin: 0 auto;
+      color: #555;
+    }
+
+    /* ===== PRODUCTS ===== */
+    #products {
+      background: #f0fdf4; /* light green background */
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 25px;
+      margin-top: 30px;
+    }
+    .swap {
+      position: relative;
+      width: 100%;
+      overflow: hidden;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+      background: #fff;
+    }
+    .swap img {
+      width: 100%;
+      display: block;
+      transition: opacity 0.5s ease, transform 0.4s ease;
+      border-radius: 12px;
+    }
+    .swap:hover img { transform: scale(1.05); }
+    .swap .back {
+      position: absolute;
+      top: 0; left: 0;
+      opacity: 0;
+    }
+    .swap:hover .back { opacity: 1; }
+    .swap:hover .front { opacity: 0; }
+
+    /* ===== BUTTON ===== */
+    .btn {
+      display: inline-block; 
+      padding: 14px 24px;
+      background: linear-gradient(135deg, #28a745, #218838); 
+      color: white; 
+      border-radius: 8px;
+      text-decoration: none; 
+      font-weight: bold;
+      font-size: 1.2em;
+      transition: background 0.3s, transform 0.2s;
+    }
+    .btn:hover { 
+      background: linear-gradient(135deg, #218838, #1e7e34);
+      transform: scale(1.05);
+    }
+
+    /* ===== FOOTER ===== */
+    footer {
+      background: #222; 
+      color: #fff; 
+      text-align: center; 
+      padding: 20px;
+      font-size: 0.95em;
+    }
+ #feedback {
+      background: #fffbea; /* light yellow */
+      padding: 60px 20px;
+    }
+    form {
+      max-width: 500px;
+      margin: 20px auto;
+      text-align: left;
+      background: #fff;
+      padding: 25px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+    form label {
+      display: block;
+      margin-bottom: 8px;
+      font-weight: bold;
+    }
+    form input, form textarea {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 1em;
+    }
+    form textarea { resize: vertical; }
+    form button {
+      width: 100%;
+      padding: 12px;
+      background: #28a745;
+      border: none;
+      color: white;
+      font-size: 1.1em;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+    form button:hover {
+      background: #218838;
+    }
+
+    /* ===== FOOTER ===== */
+    footer {
+      background: #222; 
+      color: #fff; 
+      text-align: center; 
+      padding: 20px;
+      font-size: 0.95em;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>DENSITY STORE</h1>
+    <p>Unique • Handmade </p>
+  </header>
+
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#products">Products</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="home">
+    <h2>Welcome to My Keychain Store</h2>
+    <p>We create stylish keychains for every occasion.</p>
+  </section>
+
+  <section id="products">
+    <h2>Our Products</h2>
+    <div class="gallery">
+      
+      <div class="swap">
+        <img src="https://mynakama.com/cdn/shop/products/Roronoa-Zoro-Swords-Katana-Keychain-With-Toolholder-Keychain-onepiece-anime-onepiecestore-manga-mynakama-2_1800x1800.jpg?v=1657469365.com/200?text=Keychain+Front+1" class="front" alt="Keychain 1">
+        <img src="https://mynakama.com/cdn/shop/products/Roronoa-Zoro-Swords-Katana-Keychain-With-Toolholder-Keychain-onepiece-anime-onepiecestore-manga-mynakama-2_1800x1800.jpg?v=1657469365.com/200?text=Keychain+Back+1" class="back" alt="Keychain 1 back">
+      </div>
+
+      <div class="swap">
+        <img src="https://mynakama.com/cdn/shop/products/Roronoa-Zoro-Swords-Katana-Keychain-With-Toolholder-Keychain-onepiece-anime-onepiecestore-manga-mynakama-6.jpg?v=1657469369&width=1080.com/200?text=Keychain+Front+2" class="front" alt="Keychain 2">
+        <img src="https://mynakama.com/cdn/shop/products/Roronoa-Zoro-Swords-Katana-Keychain-With-Toolholder-Keychain-onepiece-anime-onepiecestore-manga-mynakama-6.jpg?v=1657469369&width=1080.com/200?text=Keychain+Back+2" class="back" alt="Keychain 2 back">
+      </div>
+
+      <div class="swap">
+        <img src="https://th.bing.com/th/id/OIP.PLp-l3nVJ6BRqb2rWnRTogHaHa?w=174&h=180&c=7&r=0&o=7&cb=12&dpr=1.3&pid=1.7&rm=3.com/200?text=Keychain+Front+3" class="front" alt="Keychain 3">
+        <img src="https://th.bing.com/th/id/OIP.PLp-l3nVJ6BRqb2rWnRTogHaHa?w=174&h=180&c=7&r=0&o=7&cb=12&dpr=1.3&pid=1.7&rm=3.com/200?text=Keychain+Back+3" class="back" alt="Keychain 3 back">
+      </div>
+
+      <div class="swap">
+        <img src="https://th.bing.com/th/id/OIP.fudK5deqfkNCS_aV7wobNwHaHa?w=196&h=196&c=7&r=0&o=7&cb=12&dpr=1.3&pid=1.7&rm=3.com/200?text=Keychain+Front+4" class="front" alt="Keychain 4">
+        <img src="https://th.bing.com/th/id/OIP.fudK5deqfkNCS_aV7wobNwHaHa?w=196&h=196&c=7&r=0&o=7&cb=12&dpr=1.3&pid=1.7&rm=3.com/200?text=Keychain+Back+4" class="back" alt="Keychain 4 back">
+      </div>
+    </div>
+  </section>
+
+
+
+  <section id="about">
+    <h2>About Us</h2>
+    <p>We are a small startup passionate about making creative, durable, and affordable keychains. 
+       Each keychain is handmade with love and can be customized with your name or design.</p>
+<BR>
+<p ALIGN="CENTER">More Keychains Are Available, If You Want Please DM Me. <BR><B>THANK YOU FOR VISIT OUR WEBSITE.</B></P>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p>Order your favorite keychain today!</p>
+    <a class="btn" href="https://wa.me/919619769123" target="_blank">Order on WhatsApp</a>
+  </section>
+<section id="feedback">
+    <h2>Feedback</h2>
+    <p>We would love to hear from you! Please share your feedback below:</p>
+    <form>
+      <label for="name">Your Name</label>
+      <input type="text" id="name" placeholder="Enter your name" required>
+      
+      <label for="email">Your Email</label>
+      <input type="email" id="email" placeholder="Enter your email" required>
+      
+      <label for="message">Your Feedback</label>
+      <textarea id="message" rows="5" placeholder="Write your feedback here..." required></textarea>
+      
+      <button type="submit">Submit Feedback</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2025 My Keychain Store | All Rights Reserved</p>
+  </footer>
+
+</body>
+</html>
