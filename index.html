@@ -176,13 +176,44 @@
       padding: 20px;
       font-size: 0.95em;
     }
+#caution {
+  background: #fff3cd; /* soft yellow background */
+  padding: 50px 20px;
+  text-align: center;
+  border-top: 3px solid #ffc107;
+}
+#caution h2 {
+  color: #856404;
+  font-size: 2em;
+  margin-bottom: 15px;
+}
+#caution p {
+  font-size: 1.1em;
+  color: #555;
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.7;
+}
+
   </style>
 </head>
 <body>
+<section id="caution">
+  <h2>⚠️ Caution & Product Care</h2>
+  <p>
+    Please handle your keychains with care. Avoid exposure to water, heat, or chemicals to maintain their shine and durability.
+    <br><br>
+    Each keychain is handmade, so slight color or design variations may occur — that’s what makes them unique!
+    <br><br>
+    <strong>Not suitable for children under 10 years old.</strong> Small parts may present a choking hazard. 
+    Keep out of reach of young children.
+  </p>
+</section>
+
 
   <header>
-    <h1>DENSITY STORE</h1>
-    <p>Unique • Handmade </p>
+    <h1>7 DENSITY STORE</h1>
+    <p>Unique Heroic Accessories for Everyday Heroes And Bring Your Favorite Hero to Life. </p>
   </header>
 
   <nav>
@@ -193,51 +224,124 @@
   </nav>
 
   <section id="home">
-    <h2>Welcome to My Keychain Store</h2>
+    <h2> WELCOME TO MY KEYCHAIN STORE</h2>
     <p>We create stylish keychains for every occasion.</p>
   </section>
 
-  <section id="products">
-    <h2>Our Products</h2>
-    <div class="gallery">
-      
-      <div class="swap">
-        <img src="https://mynakama.com/cdn/shop/products/Roronoa-Zoro-Swords-Katana-Keychain-With-Toolholder-Keychain-onepiece-anime-onepiecestore-manga-mynakama-2_1800x1800.jpg?v=1657469365.com/200?text=Keychain+Front+1" class="front" alt="Keychain 1">
-        <img src="https://mynakama.com/cdn/shop/products/Roronoa-Zoro-Swords-Katana-Keychain-With-Toolholder-Keychain-onepiece-anime-onepiecestore-manga-mynakama-2_1800x1800.jpg?v=1657469365.com/200?text=Keychain+Back+1" class="back" alt="Keychain 1 back">
-      </div>
 
-      <div class="swap">
-        <img src="https://mynakama.com/cdn/shop/products/Roronoa-Zoro-Swords-Katana-Keychain-With-Toolholder-Keychain-onepiece-anime-onepiecestore-manga-mynakama-6.jpg?v=1657469369&width=1080.com/200?text=Keychain+Front+2" class="front" alt="Keychain 2">
-        <img src="https://mynakama.com/cdn/shop/products/Roronoa-Zoro-Swords-Katana-Keychain-With-Toolholder-Keychain-onepiece-anime-onepiecestore-manga-mynakama-6.jpg?v=1657469369&width=1080.com/200?text=Keychain+Back+2" class="back" alt="Keychain 2 back">
-      </div>
+<section id="products">
+  <h2>OUR KEYCHAINS</h2>
+  <div class="gallery">
 
+    <!-- Product 1 -->
+    <div class="product" onclick="orderKeychain('Thor\'s Mjolnir Silver color', 'https://tse2.mm.bing.net/th/id/OIP.BEmzhHDCvnI459spL5vz0QHaHa?cb=12&pid=ImgDet&w=184&h=184&c=7&dpr=1.3&o=7&rm=3','₹179')">
       <div class="swap">
-        <img src="https://th.bing.com/th/id/OIP.PLp-l3nVJ6BRqb2rWnRTogHaHa?w=174&h=180&c=7&r=0&o=7&cb=12&dpr=1.3&pid=1.7&rm=3.com/200?text=Keychain+Front+3" class="front" alt="Keychain 3">
-        <img src="https://th.bing.com/th/id/OIP.PLp-l3nVJ6BRqb2rWnRTogHaHa?w=174&h=180&c=7&r=0&o=7&cb=12&dpr=1.3&pid=1.7&rm=3.com/200?text=Keychain+Back+3" class="back" alt="Keychain 3 back">
+        <img src="https://tse2.mm.bing.net/th/id/OIP.BEmzhHDCvnI459spL5vz0QHaHa?cb=12&pid=ImgDet&w=184&h=184&c=7&dpr=1.3&o=7&rm=3" alt="Product 1" width="220" height="220">
       </div>
-
-      <div class="swap">
-        <img src="https://th.bing.com/th/id/OIP.fudK5deqfkNCS_aV7wobNwHaHa?w=196&h=196&c=7&r=0&o=7&cb=12&dpr=1.3&pid=1.7&rm=3.com/200?text=Keychain+Front+4" class="front" alt="Keychain 4">
-        <img src="https://th.bing.com/th/id/OIP.fudK5deqfkNCS_aV7wobNwHaHa?w=196&h=196&c=7&r=0&o=7&cb=12&dpr=1.3&pid=1.7&rm=3.com/200?text=Keychain+Back+4" class="back" alt="Keychain 4 back">
-      </div>
+      <p class="product-name">Thor's Mjolnir Silver color<br>₹179</p>
     </div>
-  </section>
+
+    <!-- Product 2 -->
+    <div class="product" onclick="orderKeychain('Thor\'s Mjolnir Golden color', 'https://tse1.mm.bing.net/th/id/OIP.1B58lyU6l3FNPGtQVncTeQHaHa?cb=12&pid=ImgDet&w=184&h=184&c=7&dpr=1.3&o=7&rm=3','₹179')">
+      <div class="swap">
+        <img src="https://tse1.mm.bing.net/th/id/OIP.1B58lyU6l3FNPGtQVncTeQHaHa?cb=12&pid=ImgDet&w=184&h=184&c=7&dpr=1.3&o=7&rm=3" alt="Product 2" width="220" height="220">
+      </div>
+      <p class="product-name">Thor's Mjolnir Golden color<br>₹179</p>
+    </div>
+
+    <!-- Product 3 -->
+    <div class="product" onclick="orderKeychain('Thor\'s Mjolnir Axe Golden color', 'https://m.media-amazon.com/images/I/51JifMfPL1L._SL1222_.jpg','₹129')">
+      <div class="swap">
+        <img src="https://m.media-amazon.com/images/I/51JifMfPL1L._SL1222_.jpg" alt="Product 3" width="220" height="220">
+      </div>
+      <p class="product-name">Thor's Mjolnir Axe Golden color<br>₹129</p>
+    </div>
+
+    <!-- Product 4 -->
+    <div class="product" onclick="orderKeychain('Thor\'s Mjolnir Axe Silver color', 'https://tse2.mm.bing.net/th/id/OIP.XjMpcFJslxCzqhDakbRr_gAAAA?cb=12&w=428&h=428&rs=1&pid=ImgDetMain&o=7&rm=3','₹129')">
+      <div class="swap">
+        <img src="https://tse2.mm.bing.net/th/id/OIP.XjMpcFJslxCzqhDakbRr_gAAAA?cb=12&w=428&h=428&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Product 4" width="220" height="220">
+      </div>
+      <p class="product-name">Thor's Mjolnir Axe Silver color<br>₹129</p>
+    </div>
+
+    <!-- Product 5 -->
+    <div class="product" onclick="orderKeychain('Ronoroa Zoro\'s Sword Keychain Green Color', 'https://mynakama.com/cdn/shop/products/Roronoa-Zoro-Swords-Katana-Keychain-With-Toolholder-Keychain-onepiece-anime-onepiecestore-manga-mynakama-2_1800x1800.jpg?v=1657469365','₹349')">
+      <div class="swap">
+        <img src="https://mynakama.com/cdn/shop/products/Roronoa-Zoro-Swords-Katana-Keychain-With-Toolholder-Keychain-onepiece-anime-onepiecestore-manga-mynakama-2_1800x1800.jpg?v=1657469365" alt="Product 5" width="220" height="220">
+      </div>
+      <p class="product-name">Ronoroa Zoro's Sword Keychain Green Color<br>₹349</p>
+    </div>
+
+    <!-- Product 6 -->
+    <div class="product" onclick="orderKeychain('Ronoroa Zoro\'s Sword Keychain White Color', 'https://mynakama.com/cdn/shop/products/Roronoa-Zoro-Swords-Katana-Keychain-With-Toolholder-Keychain-onepiece-anime-onepiecestore-manga-mynakama-3_1800x1800.jpg?v=1657469366','₹299')">
+      <div class="swap">
+        <img src="https://mynakama.com/cdn/shop/products/Roronoa-Zoro-Swords-Katana-Keychain-With-Toolholder-Keychain-onepiece-anime-onepiecestore-manga-mynakama-3_1800x1800.jpg?v=1657469366" alt="Product 6" width="220" height="220">
+      </div>
+      <p class="product-name">Ronoroa Zoro's Sword Keychain White Color<br>₹299</p>
+    </div>
+
+    <!-- Product 7 -->
+    <div class="product" onclick="orderKeychain('Ronoroa Zoro\'s Sword Keychain Red Color', 'https://mynakama.com/cdn/shop/products/Roronoa-Zoro-Swords-Katana-Keychain-With-Toolholder-Keychain-onepiece-anime-onepiecestore-manga-mynakama-6.jpg?v=1657469369&width=1080','₹249')">
+      <div class="swap">
+        <img src="https://mynakama.com/cdn/shop/products/Roronoa-Zoro-Swords-Katana-Keychain-With-Toolholder-Keychain-onepiece-anime-onepiecestore-manga-mynakama-6.jpg?v=1657469369&width=1080" alt="Product 7" width="220" height="220">
+      </div>
+      <p class="product-name">Ronoroa Zoro's Sword Keychain Red Color<br>₹249</p>
+    </div>
+
+    <!-- Product 8 -->
+    <div class="product" onclick="orderKeychain('Ronoroa Zoro\'s Sword Keychain Black Color', 'https://mynakama.com/cdn/shop/products/Roronoa-Zoro-Swords-Katana-Keychain-With-Toolholder-Keychain-onepiece-anime-onepiecestore-manga-mynakama-5.jpg?v=1657469368&width=1080','₹249')">
+      <div class="swap">
+        <img src="https://mynakama.com/cdn/shop/products/Roronoa-Zoro-Swords-Katana-Keychain-With-Toolholder-Keychain-onepiece-anime-onepiecestore-manga-mynakama-5.jpg?v=1657469368&width=1080" alt="Product 8" width="220" height="220">
+      </div>
+      <p class="product-name">Ronoroa Zoro's Sword Keychain Black Color<br>₹249</p>
+    </div>
+
+  </div>
+</section>
+
+<script>
+function orderKeychain(name, imageUrl, price) {
+  let phone = "919619769123"; // your WhatsApp number
+  let message = `Hello! I would like to order this keychain:\n\n🗝️ *${name}*\n💰 Price: ${price}\n🖼️ Image: ${imageUrl}\n\nYou want to order it.`;
+  let url = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
+  window.open(url, "_blank");
+}
+</script>
+
+
+
+
+
+<script>
+function orderKeychain(name, imageUrl) {
+  let phone = "919619769123"; // your WhatsApp number
+  let message = `Hello! I would like to order this keychain:\n\n🗝️ *${name}*\n🖼️ Image: ${imageUrl}\n\n`;
+  let url = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
+  window.open(url, "_blank");
+}
+</script>
+
+
+
+
+
+
+
 
 
 
   <section id="about">
-    <h2>About Us</h2>
+    <h2>ABOUT US</h2>
     <p>We are a small startup passionate about making creative, durable, and affordable keychains. 
-       Each keychain is handmade with love and can be customized with your name or design.</p>
+       Each keychain is made with love and with your superhero's power.</p>
 <BR>
 <p ALIGN="CENTER">More Keychains Are Available, If You Want Please DM Me. <BR><B>THANK YOU FOR VISIT OUR WEBSITE.</B></P>
   </section>
 
   <section id="contact">
-    <h2>Contact Us</h2>
-    <p>Order your favorite keychain today!</p>
-    <a class="btn" href="https://wa.me/919619769123" target="_blank">Order on WhatsApp</a>
-<form onsubmit="sendWhatsApp(event)">
+<h2>FOR FEEDBACK</H2>
+   <form onsubmit="sendWhatsApp(event)">
   <label for="name">Your Name</label>
   <input type="text" id="name" required>
 
