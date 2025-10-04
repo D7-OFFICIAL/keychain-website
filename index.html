@@ -237,24 +237,27 @@
     <h2>Contact Us</h2>
     <p>Order your favorite keychain today!</p>
     <a class="btn" href="https://wa.me/919619769123" target="_blank">Order on WhatsApp</a>
- <section id="feedback">
-  <h2>Feedback</h2>
-  <p>We would love to hear from you! Please share your feedback below:</p>
+<form onsubmit="sendWhatsApp(event)">
+  <label for="name">Your Name</label>
+  <input type="text" id="name" required>
 
-  <form action="https://formspree.io/f/xyznjrgw" method="POST">
-    
-    <label for="name">Your Name</label>
-    <input type="text" name="name" id="name" placeholder="Enter your name" required>
-    
-    <label for="email">Your Email</label>
-    <input type="email" name="email" id="email" placeholder="Enter your email" required>
-    
-    <label for="message">Your Feedback</label>
-    <textarea name="message" id="message" rows="5" placeholder="Write your feedback here..." required></textarea>
-    
-    <button type="submit">Submit Feedback</button>
-  </form>
-</section>
+  <label for="message">Your Feedback</label>
+  <textarea id="message" rows="5" required></textarea>
+
+  <button type="submit">Send on WhatsApp</button>
+</form>
+
+<script>
+function sendWhatsApp(event) {
+  event.preventDefault();
+  let name = document.getElementById("name").value;
+  let message = document.getElementById("message").value;
+  let phone = "919619769123"; // your WhatsApp number
+  let url = `https://wa.me/${phone}?text=Hello, my name is ${name}. Feedback: ${message}`;
+  window.open(url, "_blank");
+}
+</script>
+
 
   <footer>
     <p>© 2025 My Keychain Store | All Rights Reserved</p>
